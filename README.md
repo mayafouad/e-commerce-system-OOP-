@@ -1,42 +1,72 @@
-# e-commerce system (OOP)
+Here's a polished and structured version of your text, formatted as a proper `README.md` file for GitHub:
 
-Design an e-commerce system that has these features: 
+---
 
-● Define products with name, price and quantity. 
+# 🛒 E-Commerce System (OOP)
 
-● Some products may expire like Cheese and Biscuits while 
-others may not expire like TV and Mobile. 
+This project implements a simple object-oriented **e-commerce system** with core functionality around product management, shopping cart behavior, and customer checkout logic.
 
-● Some products may require shipping like Cheese and TV, other 
-products like Mobile scratch cards may not require so. every 
-shippable item should provide its weight. 
+---
 
-● Customers should be able to add a product to cart with 
-specific quantity not more than the available product quantity. 
+## 📦 Features
 
-● Customers are able to do checkout with items in the cart. 
+* **Product Definition**
 
-###### __________________________________________________________________________________________________________________________________________
+  * Each product has a `name`, `price`, and `available quantity`.
+  * Products are categorized as:
 
-○ Print in the console checkout details like:
+    * **Perishable Products** (e.g., Cheese, Biscuits) – can expire.
+    * **Non-Perishable Products** (e.g., TV, Mobile) – do not expire.
+  * Products may also be:
 
-■ order subtotal (sum of all items’ prices) 
+    * **Shippable** (e.g., Cheese, TV) – must have a `weight`.
+    * **Non-Shippable** (e.g., Mobile Scratch Cards).
 
-■ shipping fees 
+* **Customer Actions**
 
-■ paid amount (subtotal + shipping fees) 
+  * Customers can add products to their cart with a specific quantity (must not exceed available stock).
+  * Customers can perform checkout with items in their cart.
 
-■ customer current balance after payment 
+---
 
-○ Give an error if:
+## 💳 Checkout Behavior
 
-■ Cart is empty.
+On checkout, the system will:
 
-■ Customer's balance is insufficient. 
+* ✅ Print to console:
 
-■ one product is out of stock or expired. 
+  * **Order Subtotal** – sum of all item prices.
+  * **Shipping Fees**
+  * **Total Paid Amount** = subtotal + shipping fees.
+  * **Customer’s Remaining Balance** after payment.
 
-○ If applicable, collect all items that need to be shipped and 
-send them to ShippingService which accepts a list of 
-objects implementing an interface  containing only String 
-getName() and double getWeight() methods. 
+* ❌ Raise errors for:
+
+  * Empty cart.
+  * Insufficient customer balance.
+  * Any product in the cart being out of stock or expired.
+
+---
+
+## 🚚 Shipping Service
+
+If applicable:
+
+* Collect all **shippable items** from the cart.
+* Send them to the `ShippingService`, which accepts a list of objects implementing the following interface:
+
+```java
+public interface Shippable {
+    String getName();
+    double getWeight();
+}
+```
+
+---
+
+## 🛠 Technologies
+
+* Java (OOP Concepts)
+* Console-based I/O
+
+
