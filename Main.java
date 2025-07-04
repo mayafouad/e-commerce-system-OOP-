@@ -47,3 +47,38 @@ public class Main {
 
 
 
+/*
+output:
+
+Checking out the following products:
+1* TV (Price: $800.0)
+2* Cheddar (Price: $5.0)
+1* Mobile Card (Price: $20.0)
+...............................
+Subtotal: $830.0
+Shipping fee: $0.0
+Total: $830.0
+Insufficient balance. Please add more funds to your account.
+---------------------------------
+Checking out the following products:
+1* TV (Price: $800.0)
+5* Cheddar (Price: $5.0)
+1* Mobile Card (Price: $20.0)
+...............................
+Subtotal: $845.0
+Shipping fee: $0.0
+Total: $845.0
+Payment successful.
+---------------------------------
+Checking out the following products:
+Product Expired_Cheese is expired and cannot be purchased.
+...............................
+Subtotal: $5.0
+Shipping fee: $0.0
+Total: $5.0
+Payment successful.
+---------------------------------
+Checking out the following products:
+Product OutofStock_TV is out of stock.
+
+ */
