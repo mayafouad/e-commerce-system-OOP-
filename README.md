@@ -1,6 +1,4 @@
-Here's a polished and structured version of your text, formatted as a proper `README.md` file for GitHub:
 
----
 
 # 🛒 E-Commerce System (OOP)
 
