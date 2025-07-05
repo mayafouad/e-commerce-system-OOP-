@@ -65,6 +65,6 @@ public interface Shippable {
 ## 🛠 Technologies
 
 * Java (OOP Concepts)
-* Git + GitHub
+* Git & GitHub
 
 
