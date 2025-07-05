@@ -16,11 +16,11 @@ public class Main {
         cart1.addProduct(tv, 1);
         cart1.addProduct(cheese, 2);
         cart1.addProduct(mobileCard, 1);
-        // Checkout the cart: all products should be available and not expired
+        // Checkout the cart: all products should be available and not expired but the customer with insufficient funds
         cart1.checkout();
 
         System.out.println("---------------------------------");
-        // Create another customer with insufficient funds
+
         Cart cart2 = new Cart(customer2);
         cart2.addProduct(tv, 1);
         cart2.addProduct(cheese, 5);
