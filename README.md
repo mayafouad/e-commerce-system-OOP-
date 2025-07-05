@@ -13,8 +13,8 @@ This project implements a simple object-oriented **e-commerce system** with core
   * Each product has a `name`, `price`, and `available quantity`.
   * Products are categorized as:
 
-    * **Perishable Products** (e.g., Cheese, Biscuits) – can expire.
-    * **Non-Perishable Products** (e.g., TV, Mobile) – do not expire.
+    * **Expirable Products** (e.g., Cheese, Biscuits) – can expire.
+    * **Non-Expirable Products** (e.g., TV, Mobile) – do not expire.
   * Products may also be:
 
     * **Shippable** (e.g., Cheese, TV) – must have a `weight`.
@@ -48,8 +48,6 @@ On checkout, the system will:
 
 ## 🚚 Shipping Service
 
-If applicable:
-
 * Collect all **shippable items** from the cart.
 * Send them to the `ShippingService`, which accepts a list of objects implementing the following interface:
 
@@ -65,6 +63,6 @@ public interface Shippable {
 ## 🛠 Technologies
 
 * Java (OOP Concepts)
-* Console-based I/O
+* Git & GitHub
 
 
