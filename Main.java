@@ -19,7 +19,7 @@ public class Main {
         // Checkout the cart: all products should be available and not expired but the customer with insufficient funds
         cart1.checkout();
 
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------------------------------------------");
 
         Cart cart2 = new Cart(customer2);
         cart2.addProduct(tv, 1);
@@ -27,14 +27,14 @@ public class Main {
         cart2.addProduct(mobileCard, 1);
         cart2.checkout();
 
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------------------------------------------");
         // Create a cart with an expired product
         // This should not allow checkout and print an error message
         Product expiredCheese = new Cheese("Expired_Cheese", 5.0, 10, LocalDate.of(2022, 12, 31), 0.5);
         Cart expiredCart = new Cart(customer1);
         expiredCart.addProduct(expiredCheese, 1);
         expiredCart.checkout();
-        System.out.println("---------------------------------");
+        System.out.println("---------------------------------------------------------------------");
         // Create a cart with an out-of-stock product
         // This should not allow checkout and print an error message
         Product outOfStockTV = new TV("OutofStock_TV", 800.0, 0, 15.0);
@@ -61,7 +61,7 @@ Subtotal: $830.0
 Shipping fee: $155.0
 Total: $985.0
 Insufficient balance. Please add more funds to your account.
----------------------------------
+-----------------------------------------------
 Checking out the following products:
 1* TV (Price: $800.0)
 5* Cheddar (Price: $5.0)
@@ -74,16 +74,10 @@ Shipping fee: $155.0
 Total: $1000.0
 Payment successful.
 Your new balance is $0.0
----------------------------------
+-----------------------------------------------
 Checking out the following products:
 Product Expired_Cheese is expired and cannot be purchased.
-...............................
-Subtotal: $5.0
-Shipping fee: $0.0
-Total: $5.0
-Payment successful.
-Your new balance is $95.0
----------------------------------
+-----------------------------------------------
 Checking out the following products:
 Product OutofStock_TV is out of stock.
 

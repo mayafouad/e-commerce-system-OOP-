@@ -56,7 +56,7 @@ public class Cart {
             }
             if (product.getKey() instanceof Expirable && ((Expirable) product.getKey()).getExpirationDate().before(new Date(System.currentTimeMillis()))) {
                 System.out.println("Product " + product.getKey().getName() + " is expired and cannot be purchased.");
-                continue;
+                return;
             }
             if (product.getKey() instanceof Shippable) {
                 shipList.add(product.getKey());
