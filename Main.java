@@ -8,7 +8,7 @@ public class Main {
         Customer customer1 = new Customer("John", "123 Main St", "000000", "j@e.com", 100.0);
         Customer customer2 = new Customer("Smith", "456 Elm St", "000000", "s@p.com", 1000.0);
         // Create some products
-        Product tv = new TV("TV", 800.0, 5, 15.0);
+        Product tv = new TV("TV", 700.0, 5, 15.0);
         Product cheese = new Cheese("Cheddar", 5.0, 10, LocalDate.of(2026, 12, 31), 0.5);
         Product mobileCard = new MobileCard("Mobile Card", 20.0, 15, "011100");
         // Add products to the customer's cart
@@ -53,30 +53,30 @@ public class Main {
 output:
 
 Checking out the following products:
-1* TV (Price: $800.0)
+1* TV (Price: $700.0)
 2* Cheddar (Price: $5.0)
 1* Mobile Card (Price: $20.0)
 Shipping TV with weight: 15.0 kg
 Shipping Cheddar with weight: 0.5 kg
 _____________________________
-Subtotal: $830.0
-Shipping fee: $155.0
-Total: $985.0
+Subtotal: $730.0
+Shipping fee: $160.0
+Total: $890.0
 Insufficient balance. Please add more funds to your account.
 ------------------------------------------------------------------------------------
 
 Checking out the following products:
-1* TV (Price: $800.0)
+1* TV (Price: $700.0)
 5* Cheddar (Price: $5.0)
 1* Mobile Card (Price: $20.0)
 Shipping TV with weight: 15.0 kg
 Shipping Cheddar with weight: 0.5 kg
 _____________________________
-Subtotal: $845.0
-Shipping fee: $155.0
-Total: $1000.0
+Subtotal: $745.0
+Shipping fee: $175.0
+Total: $920.0
 Payment successful.
-Your new balance is $0.0
+Your new balance is $80.0
 -----------------------------------------------------------------------------------
 
 Checking out the following products:
