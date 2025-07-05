@@ -68,7 +68,7 @@ public class Cart {
             ShippingService shippingService = new ShippingService(shipList);
             shippingFee = shippingService.calcFee();
         }
-        System.out.println("...............................");
+        System.out.println("_____________________________");
         System.out.println("Subtotal: $" + subtotal());
         double total = subtotal() + shippingFee;
         System.out.println("Shipping fee: $" + shippingFee);
