@@ -77,6 +77,7 @@ public class Cart {
         if (balance >= total) {
             System.out.println("Payment successful.");
             customer.setBalance(balance - total);
+            System.out.println("Your new balance is $" + customer.getBalance());
         } else {
             System.out.println("Insufficient balance. Please add more funds to your account.");
         }
