@@ -11,8 +11,9 @@ public class ShippingService {
         for (Product item : items) {
             if (item instanceof Shippable) {
                 totalWeight += ((Shippable) item).getWeight();
+                System.out.println("Shipping " + ((Shippable) item).getName() + " with weight: " + ((Shippable) item).getWeight() + " kg");
             }
         }
-        return totalWeight * 10;
+        return totalWeight * 10.0;
     }
 }

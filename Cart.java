@@ -58,15 +58,15 @@ public class Cart {
                 System.out.println("Product " + product.getKey().getName() + " is expired and cannot be purchased.");
                 continue;
             }
-            if (product instanceof Shippable) {
+            if (product.getKey() instanceof Shippable) {
                 shipList.add(product.getKey());
             }
             System.out.println(product.getValue() + "* " + product.getKey().getName() + " (Price: $" + product.getKey().getPrice() + ")");
             product.getKey().updateQuantity(-product.getValue());
-            if(shipList.size() > 0){
-                ShippingService shippingService = new ShippingService(shipList);
-                shippingFee = shippingService.calcFee();
-            }
+        }
+        if(shipList.size() > 0){
+            ShippingService shippingService = new ShippingService(shipList);
+            shippingFee = shippingService.calcFee();
         }
         System.out.println("...............................");
         System.out.println("Subtotal: $" + subtotal());

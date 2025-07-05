@@ -54,21 +54,26 @@ Checking out the following products:
 1* TV (Price: $800.0)
 2* Cheddar (Price: $5.0)
 1* Mobile Card (Price: $20.0)
+Shipping TV with weight: 15.0 kg
+Shipping Cheddar with weight: 0.5 kg
 ...............................
 Subtotal: $830.0
-Shipping fee: $0.0
-Total: $830.0
+Shipping fee: $155.0
+Total: $985.0
 Insufficient balance. Please add more funds to your account.
 ---------------------------------
 Checking out the following products:
 1* TV (Price: $800.0)
 5* Cheddar (Price: $5.0)
 1* Mobile Card (Price: $20.0)
+Shipping TV with weight: 15.0 kg
+Shipping Cheddar with weight: 0.5 kg
 ...............................
 Subtotal: $845.0
-Shipping fee: $0.0
-Total: $845.0
+Shipping fee: $155.0
+Total: $1000.0
 Payment successful.
+Your new balance is $0.0
 ---------------------------------
 Checking out the following products:
 Product Expired_Cheese is expired and cannot be purchased.
@@ -77,6 +82,7 @@ Subtotal: $5.0
 Shipping fee: $0.0
 Total: $5.0
 Payment successful.
+Your new balance is $95.0
 ---------------------------------
 Checking out the following products:
 Product OutofStock_TV is out of stock.
