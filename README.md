@@ -65,4 +65,7 @@ public interface Shippable {
 * Java (OOP Concepts)
 * Git & GitHub
 
+---
+## output
 
+![Screenshot 2025-07-08 204403](https://github.com/user-attachments/assets/ff7fc0f6-aae6-43ec-9df0-86e553251ba5)
